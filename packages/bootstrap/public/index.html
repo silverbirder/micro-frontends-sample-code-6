@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+    <script
+      defer
+      src="https://unpkg.com/es-module-shims@latest/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "lit-html": "https://unpkg.com/lit-html@latest/lit-html.js?module",
+          "lit-element": "https://unpkg.com/lit-element@latest/lit-element.js?module",
+          "lit-html/lit-html.js": "https://unpkg.com/lit-html@latest/lit-html.js?module",
+          "lit-html/lib/shady-render.js": "https://unpkg.com/lit-html@latest/lib/shady-render.js?module"
+        }
+      }
+    </script>
+    <script type="module-shim">
+      import start from '/dist/bootstrap.js';
+      start();
+    </script>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module">
-      import {a} from '/dist/index';
-      a();
-    </script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <x-component></x-component>
   </body>
 </html>
