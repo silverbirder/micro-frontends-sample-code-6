@@ -20,5 +20,6 @@
   "devDependencies": {
     "create-snowpack-app": "^1.8.8",
     "lerna": "^3.22.1"
-  }
+  },
+  "dependencies": {}
 }

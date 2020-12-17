@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
-export default class XComponent extends LitElement {
+export default class TopPageComponent extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -11,7 +11,7 @@ export default class XComponent extends LitElement {
 
   render() {
     return html`
-      Hello from lit-element!
+      Top Page
     `;
   }
 }

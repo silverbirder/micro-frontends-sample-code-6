@@ -1,19 +1,12 @@
 import {Router} from '@vaadin/router';
-import XComponent from './x-component';
-customElements.define("x-component", XComponent);
+import TopPageComponent from './top-page-component';
+import SearchPageComponent from './search-page-component';
+customElements.define('top-page-component', TopPageComponent);
+customElements.define('search-page-component', SearchPageComponent);
 
 const outlet = document.getElementById('outlet');
 const router = new Router(outlet);
 router.setRoutes([
-  {path: '/', component: 'x-component'},
+  {path: '/', component: 'top-page-component'},
+  {path: '/s', component: 'search-page-component'},
 ]);
-
-// const components: string[] = ["x-component"];
-// components
-// .filter((component: string) => document.querySelector(component) !==  null)
-// .map((component: string) => {
-//   import(`./${component}.js`).then(x => {
-//     // @ts-ignore
-//     customElements.define(component, x.default);
-//   });
-// });
