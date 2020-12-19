@@ -5,12 +5,7 @@ module.exports = {
     src: {url: '/dist'},
   },
   plugins: [
-    '@snowpack/plugin-typescript', 
-    // [
-    //   '@snowpack/plugin-webpack', {
-    //     "scripts": {"bundle:*": "@snowpack/plugin-webpack"}
-    //   }
-    // ]
+    '@snowpack/plugin-typescript', '@snowpack/plugin-optimize'
   ],
   install: [
     /* ... */
