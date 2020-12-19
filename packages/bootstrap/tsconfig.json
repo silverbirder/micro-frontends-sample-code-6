@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types"],
+  "include": ["src", "types", "../team-product-components/src/product-component.ts", "../team-search-components/src/search-box-component.ts", "../pages/src/search-page-component.ts"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
