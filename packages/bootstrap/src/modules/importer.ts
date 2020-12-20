@@ -13,4 +13,10 @@
 export class MyImporter {
     constructor() {
     }
+    async fetch(nameList: Array<string>) {
+        await new Promise(resolve => setTimeout(resolve, 3000));
+        return nameList.map((name: string) => {
+            return {name: name, url: 'https://localhost'}
+        })
+    }
 }
