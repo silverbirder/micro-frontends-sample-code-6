@@ -1,4 +1,5 @@
 {
+  "name": "team-search-components",
   "scripts": {
     "start": "snowpack dev --port 5000",
     "build": "snowpack build",

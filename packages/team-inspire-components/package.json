@@ -1,4 +1,5 @@
 {
+  "name": "team-inspire-components",
   "scripts": {
     "start": "snowpack dev --port 7000",
     "build": "snowpack build",
