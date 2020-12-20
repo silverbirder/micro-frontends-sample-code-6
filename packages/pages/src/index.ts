@@ -1,2 +1,2 @@
-import './search-page-component';
-import './top-page-component';
+import './components/search-page-component';
+import './components/top-page-component';
