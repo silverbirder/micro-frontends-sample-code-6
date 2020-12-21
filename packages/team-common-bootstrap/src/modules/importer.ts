@@ -11,12 +11,21 @@
 5. define custom element
 */
 export class MyImporter {
+    targets: string[];
     constructor() {
+        this.targets = []
     }
-    async fetch(nameList: Array<string>) {
-        await new Promise(resolve => setTimeout(resolve, 3000));
-        return nameList.map((name: string) => {
-            return {name: name, url: 'https://localhost'}
+    stacks(targets: string[]) {
+        this.targets = this.targets.concat(targets);
+    }
+    async fetch() {
+        const {SNOWPACK_PUBLIC_SERVICE_DISCOVERY_API_URL} = import.meta.env;
+        const response = await (await (await fetch(SNOWPACK_PUBLIC_SERVICE_DISCOVERY_API_URL)).json());
+        const v = this.targets.map(async (target) => {
+            // const obj = await import(`/proxy?u=${response[target]}`);
+            const obj = await import(response[target]);
+            return {target: target, object: obj}
         })
+        console.log(v);
     }
 }

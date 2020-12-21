@@ -1,10 +1,7 @@
 require('dotenv').config();
 require('fastify')()
 .register(require('fastify-cors'), { 
-    origin: (origin, cb) => {
-        cb(null, true)
-        return
-      }
+    origin: true
 })
 .get('/manifest.json', async (request, reply) => {
   reply.type('application/json').code(200)

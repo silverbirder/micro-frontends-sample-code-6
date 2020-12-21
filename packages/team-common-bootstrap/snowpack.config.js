@@ -12,6 +12,9 @@ module.exports = {
   ],
   installOptions: {
     installTypes: true,
+    env: {
+      SNOWPACK_PUBLIC_SERVICE_DISCOVERY_API_URL: true
+    }
   },
   devOptions: {
     /* ... */
@@ -19,9 +22,16 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-  proxy: {
-    /* ... */
-  },
+  // proxy: {
+  //   "/proxy": {
+  //     on: { proxyReq: (p, req, res) => {
+  //       console.log('hey');
+  //       proxyReq.url = "http://localhost:8010";
+  //       return proxyReq;
+  //     }},
+  //     target: "http://localhost:8000"
+  //   }
+  // },
   alias: {
     /* ... */
   },
