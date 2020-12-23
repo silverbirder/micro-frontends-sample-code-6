@@ -22,7 +22,11 @@ module.exports = {
     /* ... */
   },
   proxy: {
-    /* ... */
+    "/*": {
+      on: { proxyReq: (p, req, res) => {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+      }}
+    }
   },
   alias: {
     /* ... */
