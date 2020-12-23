@@ -1,6 +1,10 @@
 import { LitElement, html, css } from 'lit-element';
 
 export default class TopPageComponent extends LitElement {
+  static dependencies() {
+    return ['search-box']
+  }
+
   static get styles() {
     return css`
       :host {
@@ -11,7 +15,7 @@ export default class TopPageComponent extends LitElement {
 
   render() {
     return html`
-      Top Page
+      <search-box></search-box>
     `;
   }
 }
