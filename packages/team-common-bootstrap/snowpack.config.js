@@ -22,16 +22,6 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-  // proxy: {
-  //   "/proxy": {
-  //     on: { proxyReq: (p, req, res) => {
-  //       console.log('hey');
-  //       proxyReq.url = "http://localhost:8010";
-  //       return proxyReq;
-  //     }},
-  //     target: "http://localhost:8000"
-  //   }
-  // },
   alias: {
     /* ... */
   },

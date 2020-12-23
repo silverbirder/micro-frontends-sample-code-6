@@ -22,3 +22,9 @@ Your app is ready to be deployed!
 ### Q: What about Eject?
 
 No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+
+# Notes
+
+```
+$ export SNOWPACK_PUBLIC_SERVICE_DISCOVERY_API_URL=https://8020-d47ffc10-adf5-4498-87a9-96c59091ac13.ws-us03.gitpod.io/manifest.json
+```
