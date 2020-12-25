@@ -1,1 +1,1 @@
-import './components/app-root';
+import './components/search-box-component';

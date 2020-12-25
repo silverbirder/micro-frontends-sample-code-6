@@ -1,1 +1,1 @@
-import './components/app-root';
+import './components/recommend-component';
