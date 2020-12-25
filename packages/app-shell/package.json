@@ -1,7 +1,7 @@
 {
-  "name": "team-common-bootstrap",
+  "name": "app-shell",
   "scripts": {
-    "start": "snowpack dev --port 8010",
+    "start": "snowpack dev --port 9010",
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
