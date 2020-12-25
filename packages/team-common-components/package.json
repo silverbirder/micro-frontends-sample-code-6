@@ -1,5 +1,5 @@
 {
-  "name": "team-common-pages",
+  "name": "team-common-components",
   "scripts": {
     "start": "snowpack dev --port 8000",
     "build": "snowpack build",
