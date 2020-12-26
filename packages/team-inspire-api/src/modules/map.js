@@ -1,3 +1,3 @@
 exports.envMap = {
-    "recommend-component": `${process.env.RECOMMEND_COMPONENT}`
+    "inspire-recommend-component": `${process.env.INSPIRE_RECOMMEND_COMPONENT}`
 }

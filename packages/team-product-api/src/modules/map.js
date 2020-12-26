@@ -1,3 +1,3 @@
 exports.envMap = {
-    "product-component": `${process.env.PRODUCT_COMPONENT}`
+    "product-box-component": `${process.env.PRODUCT_BOX_COMPONENT}`
 }

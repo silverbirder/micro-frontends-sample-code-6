@@ -1,1 +1,1 @@
-import './components/product-component';
+import './components/product-box-component';

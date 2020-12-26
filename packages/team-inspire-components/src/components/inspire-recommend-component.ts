@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
-export default class ProductComponent extends LitElement {
+export default class InspireRecommendComponent extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -11,7 +11,7 @@ export default class ProductComponent extends LitElement {
 
   render() {
     return html`
-      this is product
+      Recommend!
     `;
   }
 }

@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 
-export default class TopPageComponent extends LitElement {
+export default class CommonTopPageComponent extends LitElement {
   static dependencies() {
     return ['search-box']
   }

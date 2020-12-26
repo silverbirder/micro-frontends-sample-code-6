@@ -1,1 +1,1 @@
-import './components/recommend-component';
+import './components/inspire-recommend-component';

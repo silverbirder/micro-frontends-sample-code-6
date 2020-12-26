@@ -4,13 +4,19 @@ exports.handler = async function(componentName) {
     if (typeof (typeof componentName) !== 'string') {
         return {} // TODO: include the error message (response type ...)
     }
+    let requestURL = "";
     if (componentName.startsWith('search')) {
-        return await fetch(`${process.env.SEARCH_API}`);
+        requestURL = `${process.env.SEARCH_API}`;
     } else if (componentName.startsWith('product')) {
-        return await fetch(`${process.env.PRODUCT_API}`);
+        requestURL = `${process.env.PRODUCT_API}`;
     } else if (componentName.startsWith('inspire')) {
-        return await fetch(`${process.env.INSPIRE_API}`);
+        requestURL = `${process.env.INSPIRE_API}`;
     } else if (componentName.startsWith('common')) {
-        return await fetch(`${process.env.COMMON_API}`);
+        requestURL = `${process.env.COMMON_API}`;
     }
+    const response = await (await fetch(requestURL)).json();
+    // const javascriptCode = await (await fetch(response[componentName])).text();
+    // const module = await import(`data:text/javascript,${javascriptCode}`);
+    // console.log(module);
+    return response;
 }

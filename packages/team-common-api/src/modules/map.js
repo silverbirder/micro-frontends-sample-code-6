@@ -1,4 +1,4 @@
 exports.envMap = {
-    "search-page-component": `${process.env.SEARCH_PAGE_COMPONENT}`,
-    "top-page-component": `${process.env.TOP_PAGE_COMPONENT}`,
+    "common-search-page-component": `${process.env.COMMON_SEARCH_PAGE_COMPONENT}`,
+    "common-top-page-component": `${process.env.COMMON_TOP_PAGE_COMPONENT}`,
 }
