@@ -15,8 +15,7 @@ exports.handler = async function(componentName) {
         requestURL = `${process.env.COMMON_API}`;
     }
     const response = await (await fetch(requestURL)).json();
-    // const javascriptCode = await (await fetch(response[componentName])).text();
-    // const module = await import(`data:text/javascript,${javascriptCode}`);
-    // console.log(module);
-    return response;
+    const returnValues = {};
+    returnValues[componentName] = response[componentName];
+    return returnValues;
 }

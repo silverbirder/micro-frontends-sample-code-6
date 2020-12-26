@@ -13,7 +13,7 @@ module.exports = {
   installOptions: {
     installTypes: true,
     env: {
-      SNOWPACK_PUBLIC_SERVICE_DISCOVERY_API_URL: true
+      SNOWPACK_PUBLIC_COMPONENT_DISCOVERY_API_URL: true
     }
   },
   devOptions: {
