@@ -2,15 +2,17 @@ import {MyRouter} from './modules/router';
 import {MyImporter} from './modules/importer';
 
 const router = new MyRouter('outlet');
-
-router.setRoutes([
+const mainComponentsPath = [
     {path: '/', component: 'common-top-page-component'}, 
     {path: '/s', component: 'common-search-page-component'}
-])
+];
+router.setRoutes(mainComponentsPath);
 
 const importer = new MyImporter();
-importer.fetch('common-search-page-component').then((r:any) => {
-    r.map((o: any) => {
-        customElements.get(o.componentName) || customElements.define(o.componentName, o.module);
-    });
-})
+Promise.all(mainComponentsPath
+    .map((mainComponentPath) => mainComponentPath.component)
+    .map(async (componentName) => {
+    return await importer.fetch(componentName)
+})).then(v => {v.map((vv) => {vv.map((vvv: any) => {
+    customElements.get(vvv.componentName) || customElements.define(vvv.componentName, vvv.module)
+})})})

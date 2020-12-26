@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit-element';
 
 export default class CommonTopPageComponent extends LitElement {
   static dependencies() {
-    return ['search-box']
+    return []
   }
 
   static get styles() {
@@ -15,7 +15,7 @@ export default class CommonTopPageComponent extends LitElement {
 
   render() {
     return html`
-      <search-box></search-box>
+      Top Page
     `;
   }
 }
