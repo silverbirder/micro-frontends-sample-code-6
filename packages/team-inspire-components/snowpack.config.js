@@ -13,7 +13,7 @@ module.exports = {
     /* ... */
   ],
   installOptions: {
-    /* ... */
+    externalPackage: ['lit-element']
   },
   devOptions: {
     /* ... */
