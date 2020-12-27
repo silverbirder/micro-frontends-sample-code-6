@@ -7,9 +7,6 @@ export default class CommonTopPageComponent extends LitElement {
 
   static get styles() {
     return css`
-      :host {
-        color: red;
-      }
     `;
   }
 

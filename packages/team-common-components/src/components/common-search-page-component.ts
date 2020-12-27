@@ -7,16 +7,13 @@ export default class CommonSearchPageComponent extends LitElement {
 
   static get styles() {
     return css`
-      :host {
-        color: red;
-      }
     `;
   }
 
   render() {
     return html`
+      <div>Keyword is ${new URLSearchParams(location.search).get('k') || 'none'}</div>
       <search-box-component></search-box-component>
-      Keyword is ${new URLSearchParams(location.search).get('k') || 'none'}
     `;
   }
 }
