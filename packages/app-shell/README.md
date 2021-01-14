@@ -26,5 +26,5 @@ No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
 # Notes
 
 ```
-$ export SNOWPACK_PUBLIC_COMPONENT_DISCOVERY_API_URL=https://9020-d47ffc10-adf5-4498-87a9-96c59091ac13.ws-us03.gitpod.io/manifest.json
+$ export SNOWPACK_PUBLIC_COMPONENT_DISCOVERY_API_URL=http://localhost:9020/manifest.json
 ```

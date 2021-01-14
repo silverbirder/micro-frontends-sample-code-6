@@ -1,7 +1,6 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
     src: {url: '/dist'},
   },
   plugins: [
@@ -13,7 +12,7 @@ module.exports = {
     /* ... */
   ],
   installOptions: {
-    externalPackage: ['lit-element']
+    /* ... */
   },
   devOptions: {
     /* ... */
@@ -24,8 +23,8 @@ module.exports = {
   proxy: {
     "/*": {
       on: { proxyReq: (p, req, res) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-      }}
+          res.setHeader('Access-Control-Allow-Origin', '*');
+        }}
     }
   },
   alias: {

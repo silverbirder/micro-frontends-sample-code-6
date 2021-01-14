@@ -4,6 +4,7 @@
   "description": "## Note",
   "main": "index.js",
   "scripts": {
+    "install": "lerna bootstrap",
     "start": "lerna run --parallel start"
   },
   "repository": {

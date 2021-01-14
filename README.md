@@ -2,23 +2,16 @@
 
 ![overview](./overview.svg)
 
+```
+$ npm install
+$ npm run install
 
-## Note
+$ export SNOWPACK_PUBLIC_COMPONENT_DISCOVERY_API_URL=http://localhost:9020/manifest.json
+$ cp packages/component-discovery-api/.env.sample packages/component-discovery-api/.env
+$ cp packages/team-common-api/.env.sample packages/team-common-api/.env
+$ cp packages/team-inspire-api/.env.sample packages/team-inspire-api/.env
+$ cp packages/team-product-api/.env.sample packages/team-product-api/.env
+$ cp packages/team-search-api/.env.sample packages/team-search-api/.env
 
-* Native
-  * ES Modules
-  * import-map
-  * import.meta
-  * web worker
-  * dynamic import
-  * JSON modules, CSS modules, Wasm modules
-* Polyfill
-  * systemjs
-  * es-module-shims
-  * shimport
-* CDN
-  * skypack
-* Bundler
-  * snowpack
-* Other
-  * modern-web.dev
+$ npm run start
+```
